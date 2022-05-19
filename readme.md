@@ -1,43 +1,54 @@
 install zsh centos:
-sudo yum update -y
+
+`sudo yum update -y`
 
 install dev tools:
-sudo yum groupinstall "Development tools" -y
-sudo yum install ncurses-devel -y
+
+`sudo yum groupinstall "Development tools" -y`
+
+`sudo yum install ncurses-devel -y`
 
 Check gcc version:
-gcc -v
 
-sudo yum install wget -y
-wget https://sourceforge.net/projects/zsh/files/zsh/5.9/zsh-5.9.tar.xz/download
+`gcc -v`
 
-tar -xvJf download
+`sudo yum install wget -y`
 
-cd zsh-5.9
-./configure
+`wget https://sourceforge.net/projects/zsh/files/zsh/5.9/zsh-5.9.tar.xz/download`
 
-make
-sudo make install
+`tar -xvJf download`
 
-sudo vi /etc/shells
-addthe following entry:
-/usr/local/bin/zsh
+`cd zsh-5.9`
 
-sudo vi /etc/pam.d/chsh
+`./configure`
+
+`make`
+
+`sudo make install`
+
+`sudo vi /etc/shells`
+
+add the following entry:
+
+`/usr/local/bin/zsh`
+
+`sudo vi /etc/pam.d/chsh`
+
 add the following entry at the top:
 
-auth       sufficient   pam_wheel.so trust group=chsh
+`auth       sufficient   pam_wheel.so trust group=chsh`
 
-sudo groupadd chsh
+`sudo groupadd chsh`
 
-usermod -a -G chsh $USER
+`usermod -a -G chsh $USER`
 
-getent passwd $USER
+`getent passwd $USER`
 
-chsh -s /usr/local/bin/zsh
+`chsh -s /usr/local/bin/zsh`
 
-getent passwd $USER
+`getent passwd $USER`
 
 set up zsh:
-zsh
+
+`zsh`
 
