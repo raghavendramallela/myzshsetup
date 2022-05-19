@@ -1,0 +1,2 @@
+# myzshsetup
+customizing zsh
