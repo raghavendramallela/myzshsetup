@@ -53,15 +53,19 @@ set up zsh:
 `zsh`
 
 `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/.config/zsh/powerlevel10k`
+
 `echo 'source ~/.config/zsh/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc`
 
 `git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh/zsh-syntax-highlighting`
+
 `echo 'source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc`
 
 `git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git ~/.config/zsh/zsh-autosuggestions`
+
 `echo 'source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc`
 
 `git clone --depth=1 https://github.com/zsh-users/zsh-history-substring-search.git ~/.config/zsh/zsh-history-substring-search`
+
 `echo 'source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh' >> ~/.zshrc`
 
 
